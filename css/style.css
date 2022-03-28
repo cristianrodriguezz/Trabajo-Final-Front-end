@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    width: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+header .logo{
+    margin-left: 10vw;
+}
+header .menuPrincipal{
+    font-weight: 600;
+    font-size: 13px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 25rem;
+}
+header #hamburguesa{
+    display: none;
+}
+.botonStarted{
+    background-color: #F3603B;
+    width: 134px;
+    height: 44px;
+    border: 0px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+header #botonStarted{
+    margin-right: 10vw;
+}
+main .portada{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 66px;
+    width: 439px;
+    height: 198px;
+    color: #232C50;
+}
+main .textoPortada{
+    font-weight: 700;
+    font-size: 16.5584px;
+    line-height: 157.1%;
+    width: 350px;
+    height: 71px;
+    margin-top: 28px;
+    margin-bottom: 48px;
+}
+main .portadaIzq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5vw;
+}
+
+main .contenedorDestacado{
+    display: flex;
+    justify-content: center;
+}
+main .destacado1 h2{
+    margin-bottom: 25px;
+    width: 433px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 114.6%;
+    color: #232851;
+}
+main .destacado1 p{
+    width: 337px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 151.1%;
+    color: #000000;
+}
+main .destacado1{
+    margin-right: 150px;
+}
+.icon{
+    padding: 7px 21px 7px 21px;
+    background-color: #F3603B;
+    border-radius: 30px;
+    margin-right: 23px;
+}
+.titulo{
+    color: #323851;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 8px;
+}
+.parrafo{
+    margin-left: 83px;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    color: #B3B2B7;
+    width: 437px;
+    height: 104px;
+}
+.comentario{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+main .perfiles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#titl{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-weight: 900;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    text-align: center;
+    color: #242E53;
+}
+/* ↓↓↓↓↓↓ Estas son las cards de los comentarios ↓↓↓↓↓↓ */
+main .card{
+    background-color: #FAFAFA;
+    width: 446px;
+    height: 220px;
+    margin: 20px;
+    transition: 0.5s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+main .iconoPerfil{
+    position: relative;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    left: 188px;
+    top: -30px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.card h4{
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    color: #3F4868;
+    text-align: center;
+}
+.card p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 156.6%;
+    color: #B9B9C1;
+    text-align: center;
+    margin: 20px;
+}
+
+.seccionComentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  ↑↑↑↑↑ Estas son las cards de los comentarios ↑↑↑↑↑  */
+
+#botonPerfiles{
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+
+/* Footer*/
+
+footer .naranja{
+    background-color: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 224px;
+}
+#botonBlanco{
+    background-color: #FFFFFF;
+    color: #F3603B;
+    margin-right: 8vw;
+}
+footer h1{
+    color: #FAFAFA;
+    width: 438px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 8vw;
+}
+
+footer .oscuro{
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: space-around;
+    height: 247px;
+}
+footer .iconosContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer .iconosRedes{
+    margin: 4px;
+}
+footer .cont{
+    display: flex;
+}
+footer .contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #FFFFFF;
+    width: 120px;
+    margin: 25px;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+footer .listaContacto{
+    margin: 8px;
+}
+footer .botonGo{
+    background-color: #F3603B;
+    width: 63px;
+    height: 42px;
+    border: 0px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+footer .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer .input{
+    width: 201px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+footer .copy{
+    color: #8C8C94;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+    text-align: end;
+}
+.botonStarted:hover, .botonGo:hover{
+    background-color: rgb(248, 155, 132);
+    cursor: pointer;
+}
+#botonBlanco:hover{
+    color: rgb(248, 172, 153);
+    background-color: #e8e8ee;
+}
+.nav:hover{
+    color: #B3B2B7;
+    cursor: pointer;
+}
+.iconosRedes:hover{
+    background-color: gray;
+    fill: #242E53;
+}
+.listaContacto:hover{
+    color: #f36b49;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: none;
+}
+.iconoPerfil:hover{
+    transform: scale(1.5,1.5);
+}
+.logo:hover{
+    cursor: pointer;
+}
+@media (max-width: 375px){
+
+    header .logo{
+        margin-left: 20px;
+    }
+    header{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    header .menuPrincipal{
+        display: none;
+        
+    }
+    header #botonStarted{
+        display: none;
+    }
+    header #hamburguesa{
+        display: block;
+        margin-right: 35px;
+    }
+    main .portada{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #illustration{
+        width: 375px;
+    }
+    main .portadaIzq{
+        margin: 0%;
+        text-align: center;
+    }
+    main .portadaIzq h1{
+        width: 356px;
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .portadaIzq p{
+        margin-left: auto;
+        margin-right: auto;
+        color: #8C8C94;
+        font-weight: 400;
+    }
+    main .botonStarted{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .contenedorDestacado{
+        flex-direction: column;
+    }
+    main .destacado1{
+        margin-top: 35px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .destacado1 h2{
+        width: 300px;
+        margin: 0%;
+        margin-left: 18px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    main .destacado1 p{
+        color: #8C8C94;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        width: 300px;
+    }
+    main .parrafo{
+        margin: 0%;
+        margin-right: auto;
+        margin-left: 5%;
+        width: 330px;
+    }
+    .titulo{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    main .comentario{
+        margin-left: 10px;
+        margin-top: 50px;
+        background-color: #fcddd6;
+        border-radius: 30px 0px 0px 30px;
+    }
+    #titl{
+        margin-top: 45px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    main .card{
+        width: 350px;
+        height: 233px;
+    }
+    footer .naranja{
+        height: 350px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer h1{
+        width: 340px;
+        margin: 0%;
+        text-align: center;
+    }
+    #botonBlanco{
+        margin: 0%;
+        margin-bottom: 40%;
+        font-weight: 900;
+    }
+
+    footer .oscuro{
+        width: auto;
+        height: auto;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .copy{
+        position: absolute;
+        z-index: 55;
+        bottom: 6%;
+        left: 25%;
+    }
+    footer .cont{
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .lgo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contenedorIconosRedes{
+        display: flex;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: nowrap;
+    }
+    footer .iconosRedes{
+        width: 2.4rem;
+        margin: 10px 15px;
+    }
+    .form{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .iconosContacto{
+        margin-bottom: 100px;
+    }
+    footer .iconosContacto{
+        flex-direction: column-reverse;
+    }
+    footer .contacto {
+        margin: 0%;
+    }
+    main .iconoPerfil{
+        left: 145px;
+    }
+}
