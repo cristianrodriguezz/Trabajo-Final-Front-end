@@ -308,7 +308,7 @@ footer .copy{
 .logo:hover{
     cursor: pointer;
 }
-@media (max-width: 375px){
+@media (max-width: 480px){
 
     header .logo{
         margin-left: 20px;
