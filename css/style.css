@@ -3,9 +3,6 @@
     padding: 0%;
     margin: 0%;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-family: 'League Gothic', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 body{
     width: 100%;
@@ -19,13 +16,11 @@ html{
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 75px;
     padding-bottom: 75px;
 }
-header .logo{
-    margin-left: 10vw;
-}
+
 header .menuPrincipal{
     font-weight: 600;
     font-size: 13px;
@@ -47,27 +42,31 @@ header #hamburguesa{
     color: #FFFFFF;
     transition: all 0.5s;
 }
-header #botonStarted{
-    margin-right: 10vw;
-}
 main .portada{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-h1{
+main .portada #illustration{
+    width: 100%;
+}
+.titulO{
     font-weight: 700;
     font-size: 58px;
     line-height: 66px;
-    width: 439px;
+    max-width: 439px;
     height: 198px;
     color: #232C50;
+    height: auto;
 }
 main .textoPortada{
     font-weight: 700;
     font-size: 16.5584px;
     line-height: 157.1%;
-    width: 350px;
-    height: 71px;
+    max-width: 350px;
+    height: auto;
     margin-top: 28px;
     margin-bottom: 48px;
 }
@@ -77,14 +76,13 @@ main .portadaIzq{
     justify-content: center;
     margin-right: 5vw;
 }
-
 main .contenedorDestacado{
     display: flex;
     justify-content: center;
 }
 main .destacado1 h2{
     margin-bottom: 25px;
-    width: 433px;
+    max-width: 433px;
     height: 88px;
     font-weight: 700;
     font-size: 36px;
@@ -92,12 +90,12 @@ main .destacado1 h2{
     color: #232851;
 }
 main .destacado1 p{
-    width: 337px;
+    max-width: 337px;
     height: 88px;
     font-weight: 700;
     font-size: 16px;
     line-height: 151.1%;
-    color: #000000;
+    color: #B3B2B7;
 }
 main .destacado1{
     margin-right: 150px;
@@ -107,6 +105,7 @@ main .destacado1{
     background-color: #F3603B;
     border-radius: 30px;
     margin-right: 23px;
+    color: #FFFFFF;
 }
 .titulo{
     color: #323851;
@@ -115,6 +114,9 @@ main .destacado1{
     line-height: 23px;
     margin-top: 8px;
 }
+p{
+    height: auto;
+}
 .parrafo{
     margin-left: 83px;
     font-weight: 500;
@@ -122,10 +124,9 @@ main .destacado1{
     line-height: 26px;
     color: #B3B2B7;
     width: 437px;
-    height: 104px;
+    height: auto;
 }
 .comentario{
-    display: flex;
     margin-top: 25px;
     margin-bottom: 15px;
 }
@@ -148,7 +149,7 @@ main .perfiles{
 main .card{
     background-color: #FAFAFA;
     width: 446px;
-    height: 220px;
+    height: auto;
     margin: 20px;
     transition: 0.5s;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
@@ -156,10 +157,9 @@ main .card{
 }
 main .iconoPerfil{
     position: relative;
-    left: 50%;
     width: 70px;
     height: 70px;
-    left: 188px;
+    left: 42%;
     top: -30px;
     border-radius: 50%;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
@@ -241,7 +241,7 @@ footer .contacto{
     flex-direction: column;
     justify-content: space-around;
     color: #FFFFFF;
-    width: 120px;
+    width: auto;
     margin: 25px;
     list-style-type: none;
     font-weight: 400;
@@ -309,10 +309,6 @@ footer .copy{
     cursor: pointer;
 }
 @media (max-width: 480px){
-
-    header .logo{
-        margin-left: 20px;
-    }
     header{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -326,7 +322,6 @@ footer .copy{
     }
     header #hamburguesa{
         display: block;
-        margin-right: 35px;
     }
     main .portada{
         display: flex;
@@ -340,7 +335,7 @@ footer .copy{
         text-align: center;
     }
     main .portadaIzq h1{
-        width: 356px;
+        max-width: 350px;
         font-size: 45px;
         margin-left: auto;
         margin-right: auto;
@@ -350,6 +345,7 @@ footer .copy{
         margin-right: auto;
         color: #8C8C94;
         font-weight: 400;
+        
     }
     main .botonStarted{
         margin-left: auto;
@@ -365,7 +361,7 @@ footer .copy{
         margin-right: auto;
     }
     main .destacado1 h2{
-        width: 300px;
+        width: auto;
         margin: 0%;
         margin-left: 18px;
         font-size: 30px;
@@ -376,19 +372,24 @@ footer .copy{
         margin-left: auto;
         margin-right: auto;
         font-weight: 400;
-        width: 300px;
+        width: auto;
     }
     main .parrafo{
         margin: 0%;
         margin-right: auto;
         margin-left: 5%;
-        width: 330px;
+        width: auto;
+        font-size: 4vw;
     }
     .titulo{
         margin-top: auto;
         margin-bottom: auto;
+        font-size: 4vw;
     }
     main .comentario{
+        display: flex;
+        align-items: center;
+        height: 34px;
         margin-left: 10px;
         margin-top: 50px;
         background-color: #fcddd6;
@@ -400,8 +401,7 @@ footer .copy{
         font-weight: 900;
     }
     main .card{
-        width: 350px;
-        height: 233px;
+        width: auto;
     }
     footer .naranja{
         height: 350px;
@@ -445,11 +445,12 @@ footer .copy{
         margin-bottom: 60px;
         margin-left: auto;
         margin-right: auto;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     footer .iconosRedes{
         width: 2.4rem;
         margin: 10px 15px;
+        flex-wrap: wrap;
     }
     .form{
         margin-left: auto;
@@ -462,10 +463,13 @@ footer .copy{
     footer .iconosContacto{
         flex-direction: column-reverse;
     }
+    footer #textoFooter{
+        width: auto;
+    }
     footer .contacto {
         margin: 0%;
     }
-    main .iconoPerfil{
-        left: 145px;
+    .titulO{
+        width: auto;
     }
 }
