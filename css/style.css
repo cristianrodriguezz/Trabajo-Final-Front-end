@@ -9,10 +9,10 @@ body{
     margin: 0%;
 }
 html{
-    background-image: url(../img/bg-tablet-pattern.svg);
-    background-repeat: no-repeat;
-    background-size: 50vw;
-    width: auto;
+    background-image: url(../img/bg-tablet-pattern.svg), url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 50vw, -20vw;
+    background-position-y: -5vw, 1000px ;
 }
 header{
     display: flex;
@@ -197,7 +197,8 @@ main .iconoPerfil{
 /* Footer*/
 
 footer .naranja{
-    background-color: #F3613C;
+    
+    background-color: #f15f3a;
     display: flex;
     justify-content: space-between;
     align-items: center;
