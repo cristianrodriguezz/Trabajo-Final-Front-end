@@ -230,8 +230,13 @@ footer .iconosContacto{
     flex-direction: column;
     justify-content: space-around;
 }
-footer .iconosRedes{
-    margin: 4px;
+.fa-facebook-square, .fa-youtube, .fa-twitter, .fa-pinterest, .fa-instagram{
+    margin: 10px;
+    transform: scale(1.8,1.8);
+    color: #e8e8ee;
+}
+.fa-facebook-square:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-pinterest:hover, .fa-instagram:hover{
+    color: #F3603B;
 }
 footer .cont{
     display: flex;
@@ -447,10 +452,9 @@ footer .copy{
         margin-right: auto;
         flex-wrap: wrap;
     }
-    footer .iconosRedes{
-        width: 2.4rem;
-        margin: 10px 15px;
-        flex-wrap: wrap;
+    footer .fa-facebook-square, .fa-youtube, .fa-twitter, .fa-pinterest, .fa-instagram{
+        margin: 25px;
+        transform: scale(2.5,2.5);
     }
     .form{
         margin-left: auto;
