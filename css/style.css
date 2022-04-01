@@ -5,14 +5,9 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 body{
-    width: 100%;
-    margin: 0%;
-}
-html{
     background-image: url(../img/bg-tablet-pattern.svg), url(../img/bg-tablet-pattern.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position-x: 50vw, -20vw;
-    background-position-y: -5vw, 1000px ;
+    background-position: top -200px right -50px, top 1300px left -500px;
 }
 header{
     display: flex;
@@ -136,6 +131,7 @@ main .perfiles{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 #titl{
     margin-top: 150px;
     margin-bottom: 100px;
@@ -186,6 +182,9 @@ main .iconoPerfil{
     flex-direction: column;
     align-items: center;
 }
+main .slider{
+    display: none;
+}
 
 /*  ↑↑↑↑↑ Estas son las cards de los comentarios ↑↑↑↑↑  */
 
@@ -197,7 +196,6 @@ main .iconoPerfil{
 /* Footer*/
 
 footer .naranja{
-    
     background-color: #f15f3a;
     display: flex;
     justify-content: space-between;
@@ -224,12 +222,13 @@ footer .oscuro{
     background-color: #1E1E26;
     display: flex;
     justify-content: space-around;
-    height: 247px;
+
 }
 footer .iconosContacto{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 .fa-facebook-square, .fa-youtube, .fa-twitter, .fa-pinterest, .fa-instagram{
     margin: 10px;
@@ -245,7 +244,6 @@ footer .cont{
 footer .contacto{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     color: #FFFFFF;
     width: auto;
     margin: 25px;
@@ -477,4 +475,20 @@ footer .copy{
     .titulO{
         width: auto;
     }
+    section.perfiles article:nth-child(3){
+        display: none;
+    }
+    section.perfiles article:nth-child(2){
+        display: none;
+    }
+    main .slider{
+        display: flex;
+    }
+    main .fa-circle{
+        color: #f15f3a;
+        margin-left: 2px;
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    
 }
